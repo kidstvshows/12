@@ -1,24 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href='https://www.atozcartoonist.com/favicon.ico' rel='icon' type='image/x-icon'/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<!DOCTYPE html><html><head>
-<meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>ATOZCARTOONIST (GDRIVE) </title>
-<meta name="robots" content="noindex"/>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/lumen/bootstrap.min.css"/>
+    <title>ATOZCARTOONIST (GDRIVE)</title>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
-
+    <!-- CSS Tag -->
+    <link href="https://toonshub.github.io/beta/stream/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://toonshub.github.io/beta/stream/jquery.min.js"></script>
+<link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
 <style>
-body {
-    font-family: 'Varela Round';font-size: 10px;
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  width:100%!important;
 }
+</style>
+<script>
+    var iframe = getUrlVars()["id"];
+function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+    var d = document;
+</script>		
+<script type="text/javascript">
+			function setIframeSource() {
+				var theSelect = document.getElementById('location');
+				var theIframe = document.getElementById('myIframe');
+				var theUrl;
+
+				theUrl = theSelect.options[theSelect.selectedIndex].value;
+				theIframe.src = theUrl;
+			}
+		</script>
+<style>hr{border-top:1px solid #ffffff;display:block;margin-bottom:16px;width:90%}.btn-hover {text-transform:uppercase;font-weight:1200;width: 275px; font-size: 16px; font-weight: 600; color: #fff; cursor: pointer; margin: 14px; height: 55px; text-align: center; border: none; background-size: 300% 100%; border-radius: 50px; moz-transition: all .4s ease-in-out; -o-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;}.btn-hover:hover { background-position: 100% 0; moz-transition: all .4s ease-in-out; -o-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;}.btn-hover:focus { outline: none;}.btn-hover.color-1 { background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673); box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);}.btn-hover.color-2 { background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);}.btn-hover.color-3 { background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7); box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);}.btn-hover.color-4 { background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516); box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);}.btn-hover.color-5 { background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673); box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);}.btn-hover.color-6 { background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021); box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);}.btn-hover.color-7 { background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645); box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);}.btn-hover.color-8 { background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376); box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);}.btn-hover.color-9 { background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed); box-shadow: 0 3px 12px 0 rgba(49, 196, 190, 0.75);}.btn-hover.color-10 { background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B); box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);}.btn-hover.color-11 { background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f); box-shadow: 0 5px 15px rgba(242, 97, 103, .4);}</style>
+<style>img{max-width:600px}
+hr{color:#aaaaaa}
 /* Style buttons */
 .btn {
   background-color: DodgerBlue;
@@ -28,7 +56,6 @@ body {
   cursor: pointer;
   font-size: 18px;
 }
-
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: RoyalBlue;
@@ -38,7 +65,6 @@ body {
     overflow: hidden;
     padding-top: 56.25%;
 }
-
 .resp-iframe {
     position: absolute;
     top: 0;
@@ -50,29 +76,188 @@ body {
 
 </style>
 </head>
-<body><script>
-    var iframe = getUrlVars()["id"];
-    //******************************
-    // FUNÇÃO PARA BUSCAR VAR URL  *
-    //******************************
-    function getUrlVars() {
-        var vars = {};
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-            vars[key] = value;
+<body class="min-vh-100 d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.atozcartoonist.com" title="AtoZcartoonist">
+                <img src="https://1.bp.blogspot.com/-sBVXJ7zBU_s/X93zTCODEfI/AAAAAAAADYE/xRRnEeAuReYtIHQJGauar-ZNDdWRuEBBwCLcBGAsYHQ/s320/20201219_180245.png" height="40"
+                    class="lazyload d-inline-block align-top" alt="ToonsHub">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="navbar-nav my-3 my-lg-0 order-2">     
+                </div>
+                <ul class="nav navbar-nav mr-auto order-1">
+                    <li class="nav-item">
+                            <a class="nav-link" href="/"><i class="fas fa-home fa-fw"></i> Home</a>
+                           <a class="nav-link" href="https://www.atozcartoonist.com/2020/01/report-broken-link-and-ask-any-quarry.html?m=1"><i class="fa fa-wrench"></i> Report Dead Link</a>
+                     
+                    </li>
+
+
+
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0 mx-lg-2 order-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#settings" title="Settings">
+                            <i class="fas fa-cloud-moon fa-fw"></i> <span class="d-lg-none">Choose Theme</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <script>
+        $(document).ready(function () {
+            $("#notifications").modal('show');
         });
-        return vars;
-    }
-    //********************
-    // VAR DOCUMENT = D  *
-    //********************
-    var d = document;
-</script><center><br/><a href="/"><img src="https://i.postimg.cc/8PTjv5hf/20200309-090638.png" alt="AtoZcartoonist" width="315" height="auto"/></a></center>
-<script type="text/javascript">
-d.write('<hr/><center><a href="/GDrive/Player/?id='+iframe+'"><button class="btn"><i class="fa fa-play"></i> Play Online</button></a></center><hr/><center><a href="https://www.googleapis.com/drive/v3/files/'+iframe+'?alt=media&key=AIzaSyAkZ2ekNPZgPB9AjrW5a9EzcGikH_YLsSs"><button class="btn"><i class="fa fa-download"></i> Download</button></a></center><hr/>')
+    </script>
+
+    <style>
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript">
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        // Give the parameter a variable name
+        var dynamicContent = getParameterByName('id');
+
+        $(document).ready(function () {
+
+            // Check if the URL parmeter is empty or not defined, display default content
+            if (dynamicContent == undefined || dynamicContent == '') {
+                $('#no-file').show();
+            }
+
+            // Check if the URL parameter is available or not.
+            else {
+                $('#play-download').show();
+            }
+        });
+    </script>
+
+    <div class="container">
+
+
+        <script language=javascript>
+            var theSelect, theIframe;
+            var today = new Date(),
+
+                number_of_day = today.getDay();
+            $(document).ready(function () {
+                //var today = new Date();
+                //var n = today.getDay();
+                theSelect = document.getElementById('location');
+                theIframe = document.getElementById('myIframe');
+                theUrl = theSelect.options[number_of_day].value;
+                theIframe.src = theUrl;
+            });
+            function setIframeSource() {
+                var theUrl;
+
+                if (theSelect.selectedIndex > 0) {
+                    theUrl = theSelect.options[theSelect.selectedIndex].value;
+                } else {
+                    theUrl = theSelect.options[number_of_day].value;
+                }
+                theIframe.src = theUrl;
+            }
+        </script>
+
+      <h5><center><b><u>Watch Online</u><b/></center></h5>
+      <h5><center><b><u><iframe data-aa="1531718" src="//ad.a-ads.com/1531718?size=320x50" scrolling="no" style="width:320px; height:50px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe></u><b/></center></h5>
+<hr> 
+
+       
+  <script type="text/javascript">
+d.write('<div class="resp-container"><iframe class="resp-iframe" id="youriframe" src="https://drive.google.com/file/d/'+iframe+'/preview" gesture="media" allow="encrypted-media" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" sandboxscrolling="no" sandbox="allow-scripts allow-same-origin"></iframe></div><hr/><center><a href="https://www.googleapis.com/drive/v3/files/'+iframe+'?alt=media&key=AIzaSyAkZ2ekNPZgPB9AjrW5a9EzcGikH_YLsSs" rel="noopener noreferrer"><button class="btn-hover color-9"><i class="fa fa-download"></i> DOWNLOAD</button></a><a href="https://www.atozcartoonist.com/" rel="noopener noreferrer" target="_blank"><button class="btn-hover color-7"><i class="fa fa-newspaper"></i> VISIT ATOZCARTOONIST</button><hr/><iframe data-aa="1483208" src="//ad.a-ads.com/1483208?size=336x280" scrolling="no" style="width:336px; height:280px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe><hr/></a></center></br></hr>')
 </script>
-<center><iframe data-aa="1483208" src="//ad.a-ads.com/1483208?size=336x280" scrolling="no" style="width:336px; height:280px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe></html><hr/><center>
-<style>#g207{position:fixed!important;position:absolute;top:0;top:expression
-((t=document.documentElement.scrollTop?document.documentElement.scrollTop:document
-.body.scrollTop)+"px");
-left:0;width:100%;height:100%;background-color:#fff;opacity:0.9;filter:alpha(opacity=90);display:block}#g207 p{opacity:1;filter:none;font:bold 16px Verdana,Arial,sans-serif;text-align:center;margin:20% 0}#g207 p a,#g207 p i{font-size:12px}#g207 ~ *{display:none}</style><noscript><i id=g207><p>Please enable JavaScript!<br />Bitte aktiviere JavaScript!<br />S'il vous pla&icirc;t activer JavaScript!<br />Por favor,activa el JavaScript!<br /><a href="http://antiblock.org/">antiblock.org</a></p></i></noscript><script>(function(w,u){var d=w.document,z=typeof u;function g207(){function c(c,i){var e=d.createElement('i'),b=d.body,s=b.style,l=b.childNodes.length;if(typeof i!=z){e.setAttribute('id',i);s.margin=s.padding=0;s.height='100%';l=Math.floor(Math.random()*l)+1}e.innerHTML=c;b.insertBefore(e,b.childNodes[l-1])}function g(i,t){return !t?d.getElementById(i):d.getElementsByTagName(t)};function f(v){if(!g('g207')){c('<p>Please turn off your Ad Blocker!<br/>Without advertising we cant maintain this website <br/> So, Please disable your ad blocker and support us!!!<br/>','g207')}};(function(){var a=['Adrectangle','PageLeaderAd','ad-column','advertising2','divAdBox','mochila-column-right-ad-300x250-1','searchAdSenseBox','ad','ads','adsense'],l=a.length,i,s='',e;for(i=0;i<l;i++){if(!g(a[i])){s+='<a id="'+a[i]+'"></a>'}}c(s);l=a.length;for(i=0;i<l;i++){e=g(a[i]);if(e.offsetParent==null||(w.getComputedStyle?d.defaultView.getComputedStyle(e,null).getPropertyValue('display'):e.currentStyle.display
-)=='none'){return f('#'+a[i])}}}());(function(){var t=g(0,'img'),a=['/adaffiliate_','/adops/ad','/adsales/ad','/adsby.','/adtest.','/ajax/ads/ad','/controller/ads/ad','/pageads/ad','/weather/ads/ad','-728x90-'],i;if(typeof t[0]!=z&&typeof t[0].src!=z){i=new Image();i.onload=function(){this.onload=z;this.onerror=function(){f(this.src)};this.src=t[0].src+'#'+a.join('')};i.src=t[0].src}}());(function(){var o={'http://pagead2.googlesyndication.com/pagead/show_ads.js':'google_ad_client','http://js.adscale.de/getads.js':'adscale_slot_id','http://get.mirando.de/mirando.js':'adPlaceId'},S=g(0,'script'),l=S.length-1,n,r,i,v,s;d.write=null;for(i=l;i>=0;--i){s=S[i];if(typeof o[s.src]!=z){n=d.createElement('script');n.type='text/javascript';n.src=s.src;v=o[s.src];w[v]=u;r=S[0];n.onload=n.onreadystatechange=function(){if(typeof w[v]==z&&(!this.readyState||this.readyState==="loaded"||this.readyState==="complete")){n.onload=n.onreadystatechange=null;r.parentNode.removeChild(n);w[v]=null}};r.parentNode.insertBefore(n,r);setTimeout(function(){if(w[v]!==null){f(n.src)}},2000);break}}}())}if(d.addEventListener){w.addEventListener('load',g207,false)}else{w.attachEvent('onload',g207)}})(window);</script>
+
+        </div>
+      
+      
+
+     
+
+
+    </div>
+    </main>
+    <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="settingsLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Settings</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="align-self-center font-weight-bold">Dark Theme</div>
+                        <div class="align-self-center">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                                <label class="custom-control-label" for="darkSwitch" id="darkSwitchText">on/off</label>
+                            </div>
+                        </div>
+                    </div>
+                    <small>Dark theme turns the light surfaces of the page dark, creating an experience ideal for night.
+                        Try it out!
+                        Your Dark theme setting will apply to this browser only.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="mt-auto bg-light">
+        <div class="container py-3">
+            <p class="text-center text-muted">AtoZcartoonist Stream is affiliated to <a href="/">AtoZcartoonist</a>. And does not host any files on it's servers. All files or contents hosted on third party
+                websites. <a href="/">AtoZcartoonist</a> does not accept responsibility for contents
+                hosted on third party websites. We just index those links which are already available in internet.</p>
+            <p class="m-0 text-center text-muted">Copyright &copy; 2020 <a class="skul"
+                    href="/">ATOZCARTOONIST</a></p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $('#LinkCopy').click(function () {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($('#myLink').text()).select();
+            document.execCommand("copy");
+            alert("Link copied!");
+            $temp.remove();
+        });
+    </script>
+
+
+    <script async="async" type="text/javascript" src="https://toonshub.000webhostapp.com/beta/menu.js"></script>
+</body>
+
+</html>
