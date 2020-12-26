@@ -1,0 +1,194 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>ATOZCARTOONIST STREAM</title>
+
+
+    <!-- CSS Tag -->
+    <link href="https://atozcartoonist.github.io/GDrive/atozcartoonist-stream.css" rel="stylesheet" type="text/css" />
+    <script src="https://atozcartoonist.github.io/GDrive/jquery.min.js"></script>
+
+
+
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.atozcartoonist.com/" title="AtoZcartoonist">
+                <img src="https://atozcartoonist.github.io/GDrive/logo.png" height="30"
+                    class="lazyload d-inline-block align-top" alt="AtoZcartoonist">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="navbar-nav my-3 my-lg-0 order-2">
+                    <form id="quick_search_form" class="navbar-form input-group input-group-sm"
+                        action="https://www.atozcartoonist.com" method="get">
+                        <input type="text" value="" name="s" id="search" class="form-control"
+                            placeholder="[AtoZcartoonist] Search..." autocomplete="off">
+                    </form>
+                </div>
+                <ul class="nav navbar-nav mr-auto order-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.atozcartoonist.com"><i class="fas fa-home fa-fw"></i> Home</a>
+                    </li>
+
+
+
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0 mx-lg-2 order-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#settings" title="Settings">
+                            <i class="fas fa-cloud-moon fa-fw"></i> <span class="d-lg-none">Night Mode</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <script>
+        $(document).ready(function () {
+            $("#notifications").modal('show');
+        });
+    </script>
+
+    <style>
+        .video-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .video-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <div class="container">
+
+
+        <script language=javascript>
+            var theSelect, theIframe;
+            var today = new Date(),
+
+                number_of_day = today.getDay();
+            $(document).ready(function () {
+                //var today = new Date();
+                //var n = today.getDay();
+                theSelect = document.getElementById('location');
+                theIframe = document.getElementById('myIframe');
+                theUrl = theSelect.options[number_of_day].value;
+                theIframe.src = theUrl;
+            });
+            function setIframeSource() {
+                var theUrl;
+
+                if (theSelect.selectedIndex > 0) {
+                    theUrl = theSelect.options[theSelect.selectedIndex].value;
+                } else {
+                    theUrl = theSelect.options[number_of_day].value;
+                }
+                theIframe.src = theUrl;
+            }
+        </script>
+
+       <script type="text/javascript" src="https://atozcartoonist.github.io/GDrive/b64.js"></script>
+<script type="text/javascript" src="https://atozcartoonist.github.io/GDrive/api.js"></script>
+        
+        <script type="text/javascript">
+if (window.location.hash) {
+  // Try to get page data from the URL if possible
+  var hash = window.location.hash.slice(1);
+  var data = b64.decode(hash);
+
+  try {
+    var urlDataObject = JSON.parse(data);
+    var api = apiVersions[urlDataObject.version];
+    document.write(api.decode(urlDataObject));
+  } catch (err) {
+    document.write(decodeURIComponent(data));
+  }
+} else {
+  // Otherwise redirect to the editor
+  window.location.replace("https://www.atozcartoonist.com");
+}
+</script>
+        
+    </div>
+    </main>
+    <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="settingsLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Settings</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="align-self-center font-weight-bold">Dark Theme</div>
+                        <div class="align-self-center">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                                <label class="custom-control-label" for="darkSwitch" id="darkSwitchText">on/off</label>
+                            </div>
+                        </div>
+                    </div>
+                    <small>Dark theme turns the light surfaces of the page dark, creating an experience ideal for night.
+                        Try it out!
+                        Your Dark theme setting will apply to this browser only.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="mt-auto bg-light">
+        <div class="container py-3">
+            <p class="text-center text-muted">AtoZcartoonist Stream is affiliated to <a href="https://toon-nation.ml/">AtoZ
+                     cartoonist</a>. And does not host any files on it’s servers. All files or contents hosted on third party
+                websites. <a href="https://toon-nation.ml">Toon Nation</a> does not accept responsibility for contents
+                hosted on third party websites. We just index those links which are already available in internet.</p>
+            <p class="m-0 text-center text-muted">Copyright &copy; 2020 <a class="skul"
+                    href="https://toon-nation.ml">Toon Nation</a></p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $('#LinkCopy').click(function () {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($('#myLink').text()).select();
+            document.execCommand("copy");
+            alert("Link copied!");
+            $temp.remove();
+        });
+    </script>
+
+    <script async="async" type="text/javascript" src="https://atozcartoonist.github.io/GDrive/atozcartoonist-stream.js"></script>
+</body>
+
+</html>
