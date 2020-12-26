@@ -119,24 +119,7 @@
        <script type="text/javascript" src="https://atozcartoonist.github.io/GDrive/b64.js"></script>
 <script type="text/javascript" src="https://atozcartoonist.github.io/GDrive/api.js"></script>
         
-        <script type="text/javascript">
-if (window.location.hash) {
-  // Try to get page data from the URL if possible
-  var hash = window.location.hash.slice(1);
-  var data = b64.decode(hash);
-
-  try {
-    var urlDataObject = JSON.parse(data);
-    var api = apiVersions[urlDataObject.version];
-    document.write(api.decode(urlDataObject));
-  } catch (err) {
-    document.write(decodeURIComponent(data));
-  }
-} else {
-  // Otherwise redirect to the editor
-  window.location.replace("https://www.atozcartoonist.com");
-}
-</script>
+        
         
     </div>
     </main>
