@@ -1,48 +1,68 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
+<link href='https://www.atozcartoonist.com/favicon.ico' rel='icon' type='image/x-icon'/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>ATOZCARTOONIST STREAM</title>
+    <title>ATOZCARTOONIST (GDRIVE)</title>
 
 
     <!-- CSS Tag -->
-    <link href="https://atozcartoonist.github.io/GDrive/atozcartoonist-stream.css" rel="stylesheet" type="text/css" />
-    <script src="https://atozcartoonist.github.io/GDrive/jquery.min.js"></script>
+    <link href="https://toonshub.github.io/beta/stream/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://toonshub.github.io/beta/stream/jquery.min.js"></script>
+<link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  width:100%!important;
+</style>
+<script>
+    var iframe = getUrlVars()["id"];
+function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+    var d = document;
+</script>		
+<script type="text/javascript">
+			function setIframeSource() {
+				var theSelect = document.getElementById('location');
+				var theIframe = document.getElementById('myIframe');
+				var theUrl;
 
-
-
-</head>
-
+				theUrl = theSelect.options[theSelect.selectedIndex].value;
+				theIframe.src = theUrl;
+			}
+		</script>
+<style>hr{border-top:1px solid #ffffff;display:block;margin-bottom:16px;width:90%}.btn-hover {text-transform:uppercase;font-weight:1200;width: 275px; font-size: 16px; font-weight: 600; color: #fff; cursor: pointer; margin: 14px; height: 55px; text-align: center; border: none; background-size: 300% 100%; border-radius: 50px; moz-transition: all .4s ease-in-out; -o-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;}.btn-hover:hover { background-position: 100% 0; moz-transition: all .4s ease-in-out; -o-transition: all .4s ease-in-out; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;}.btn-hover:focus { outline: none;}.btn-hover.color-1 { background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673); box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);}.btn-hover.color-2 { background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);}.btn-hover.color-3 { background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7); box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);}.btn-hover.color-4 { background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516); box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);}.btn-hover.color-5 { background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673); box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);}.btn-hover.color-6 { background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021); box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);}.btn-hover.color-7 { background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645); box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);}.btn-hover.color-8 { background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376); box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);}.btn-hover.color-9 { background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed); box-shadow: 0 3px 12px 0 rgba(49, 196, 190, 0.75);}.btn-hover.color-10 { background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B); box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);}.btn-hover.color-11 { background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f); box-shadow: 0 5px 15px rgba(242, 97, 103, .4);}</style>
+<style>img{max-width:600px}
+hr{color:#aaaaaa}
 <body class="min-vh-100 d-flex flex-column">
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://www.atozcartoonist.com/" title="AtoZcartoonist">
-                <img src="https://atozcartoonist.github.io/GDrive/logo.png" height="30"
-                    class="lazyload d-inline-block align-top" alt="AtoZcartoonist">
+            <a class="navbar-brand" href="https://www.atozcartoonist.com" title="AtoZcartoonist">
+                <img src="https://1.bp.blogspot.com/-sBVXJ7zBU_s/X93zTCODEfI/AAAAAAAADYE/xRRnEeAuReYtIHQJGauar-ZNDdWRuEBBwCLcBGAsYHQ/s320/20201219_180245.png" height="40"
+                    class="lazyload d-inline-block align-top" alt="ToonsHub">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <div class="navbar-nav my-3 my-lg-0 order-2">
-                    <form id="quick_search_form" class="navbar-form input-group input-group-sm"
-                        action="https://www.atozcartoonist.com" method="get">
-                        <input type="text" value="" name="s" id="search" class="form-control"
-                            placeholder="[AtoZcartoonist] Search..." autocomplete="off">
-                    </form>
+                <div class="navbar-nav my-3 my-lg-0 order-2">     
                 </div>
                 <ul class="nav navbar-nav mr-auto order-1">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.atozcartoonist.com"><i class="fas fa-home fa-fw"></i> Home</a>
+                            <a class="nav-link" href="/"><i class="fas fa-home fa-fw"></i> Home</a>
+                           <a class="nav-link" href="https://www.atozcartoonist.com/2020/01/report-broken-link-and-ask-any-quarry.html?m=1"><i class="fa fa-wrench"></i> Report Dead Link</a>
+
                     </li>
 
 
@@ -52,7 +72,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#settings" title="Settings">
-                            <i class="fas fa-cloud-moon fa-fw"></i> <span class="d-lg-none">Night Mode</span>
+                            <i class="fas fa-cloud-moon fa-fw"></i> <span class="d-lg-none">Choose Theme</span>
                         </a>
                     </li>
                 </ul>
@@ -67,26 +87,49 @@
     </script>
 
     <style>
-        .video-responsive {
-            overflow: hidden;
-            padding-bottom: 56.25%;
-            position: relative;
-            height: 0;
-        }
-
-        .video-responsive iframe {
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
-
-        
-    </style>
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+</style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    
+    <script type="text/javascript">
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        // Give the parameter a variable name
+        var dynamicContent = getParameterByName('id');
+
+        $(document).ready(function () {
+
+            // Check if the URL parmeter is empty or not defined, display default content
+            if (dynamicContent == undefined || dynamicContent == '') {
+                $('#no-file').show();
+            }
+
+            // Check if the URL parameter is available or not.
+            else {
+                $('#play-download').show();
+            }
+        });
+    </script>
 
     <div class="container">
 
@@ -116,11 +159,22 @@
             }
         </script>
 
-       <script type="text/javascript" src="https://atozcartoonist.github.io/GDrive/b64.js"></script>
-<script type="text/javascript" src="https://atozcartoonist.github.io/GDrive/api.js"></script>
-        
-        
-        
+      <h5><center><b><u>Watch Online</u><b/></center></h5>
+      <h5><center><b><u><iframe data-aa="1531718" src="//ad.a-ads.com/1531718?size=320x50" scrolling="no" style="width:320px; height:50px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe></u><b/></center></h5>
+<hr> 
+
+
+  <script type="text/javascript">
+d.write('<div class="resp-container"><iframe class="resp-iframe" id="youriframe" src="https://drive.google.com/file/d/'+iframe+'/preview" gesture="media" allow="encrypted-media" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" sandboxscrolling="no" sandbox="allow-scripts allow-same-origin"></iframe></div><hr/><center><a href="https://www.googleapis.com/drive/v3/files/'+iframe+'?alt=media&key=AIzaSyAkZ2ekNPZgPB9AjrW5a9EzcGikH_YLsSs" rel="noopener noreferrer"><button class="btn-hover color-9"><i class="fa fa-download"></i> DOWNLOAD</button></a><a href="https://www.atozcartoonist.com/" rel="noopener noreferrer" target="_blank"><button class="btn-hover color-7"><i class="fa fa-newspaper"></i> VISIT ATOZCARTOONIST</button><hr/><iframe data-aa="1483208" src="//ad.a-ads.com/1483208?size=336x280" scrolling="no" style="width:336px; height:280px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe><hr/></a></center></br></hr>')
+</script>
+
+        </div>
+
+
+
+
+
+
     </div>
     </main>
     <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="settingsLabel"
@@ -151,12 +205,11 @@
 
     <footer class="mt-auto bg-light">
         <div class="container py-3">
-            <p class="text-center text-muted">AtoZcartoonist Stream is affiliated to <a href="https://toon-nation.ml/">AtoZ
-                     cartoonist</a>. And does not host any files on it’s servers. All files or contents hosted on third party
-                websites. <a href="https://toon-nation.ml">Toon Nation</a> does not accept responsibility for contents
+            <p class="text-center text-muted">AtoZcartoonist Stream is affiliated to <a href="/">AtoZcartoonist</a>. And does not host any files on it's servers. All files or contents hosted on third party
+                websites. <a href="/">AtoZcartoonist</a> does not accept responsibility for contents
                 hosted on third party websites. We just index those links which are already available in internet.</p>
             <p class="m-0 text-center text-muted">Copyright &copy; 2020 <a class="skul"
-                    href="https://toon-nation.ml">Toon Nation</a></p>
+                    href="/">ATOZCARTOONIST</a></p>
         </div>
     </footer>
 
@@ -168,10 +221,10 @@
             document.execCommand("copy");
             alert("Link copied!");
             $temp.remove();
-        });
-    </script>
+</script>
 
-    <script async="async" type="text/javascript" src="https://atozcartoonist.github.io/GDrive/atozcartoonist-stream.js"></script>
-</body>
+
+    <script async="async" type="text/javascript" src="https://toonshub.000webhostapp.com/beta/menu.js"></script>
+ </body>
 
 </html>
